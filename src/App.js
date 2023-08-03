@@ -2,6 +2,8 @@ import './App.css';
 import './TodoList';
 
 function App() {
+  const [todos, setTodos] = useState(["Todo1", "Todo2"]);
+
   return (
     <div>
       <TodoList />
