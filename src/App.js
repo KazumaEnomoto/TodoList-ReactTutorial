@@ -1,12 +1,13 @@
+import { useState } from 'react';
 import './App.css';
-import './TodoList';
+import TodoList from './TodoList';
 
 function App() {
   const [todos, setTodos] = useState(["Todo1", "Todo2"]);
 
   return (
     <div>
-      <TodoList />
+      <TodoList todos={todos}/>
       <input type="text" />
       <button>タスクの追加</button>
       <button>完了したタスクの削除</button>
